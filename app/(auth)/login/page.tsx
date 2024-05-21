@@ -23,8 +23,8 @@ const LoginPage: React.FC = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="w-96">
-        <h1 className="text-2xl font-bold mb-4">Login Page</h1>
-        <form onSubmit={handleSubmit}>
+        <h1 className="text-2xl font-bold mb-4 text-center">Login</h1>
+        <form onSubmit={handleSubmit} className="flex flex-col">
           <div className="mb-4">
             <label className="block mb-2">Email:</label>
             <Input
@@ -41,7 +41,9 @@ const LoginPage: React.FC = () => {
               onChange={handlePasswordChange}
             ></Input>
           </div>
-          <Button className="" type="submit">Login</Button>
+          <Button className="" type="submit">
+            Login
+          </Button>
         </form>
       </div>
     </div>
