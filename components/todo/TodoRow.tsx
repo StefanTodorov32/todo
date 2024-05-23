@@ -4,6 +4,7 @@ import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { Todo } from "@/utils/types";
 import { CheckIcon, Pencil1Icon, TrashIcon } from "@radix-ui/react-icons";
+import TodoEdit from "./TodoEdit";
 
 const TodoRow = ({id, title, description, status}: Todo) => {
   return (
@@ -20,7 +21,7 @@ const TodoRow = ({id, title, description, status}: Todo) => {
           <CheckIcon className="w-5 h-5" />
         </Button>
         <Button size="sm" variant="ghost" className="hover:text-yellow-600 hover:bg-white">
-          <Pencil1Icon className="w-5 h-5" />
+          <TodoEdit />
         </Button>
         <Button size="sm" variant="ghost" className="hover:text-red-600 hover:bg-white">
           <TrashIcon className="w-5 h-5" />

@@ -14,7 +14,6 @@ const links = [
 
 const Navbar = (props: Props) => {
     const pathName = usePathname();
-    console.log(pathName);
 
   return (
     <nav className="p-4">
